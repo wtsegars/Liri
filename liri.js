@@ -1,9 +1,13 @@
 require("dotenv").config();
 
-var keys = require("./keys.js");
-var spotify = require("node-spotify-api")
+var keys = require("./keys");
+var spotifyAPI = require("node-spotify-api");
 
-// var spotify = new Spotify(keys.spotify);
+var request = require("request");
+
+var fs = require("fs");
+
+var spotify = new Spotify(keys.spotify);
 
 var axios = require("axios");
 
