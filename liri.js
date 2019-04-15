@@ -1,13 +1,12 @@
 require("dotenv").config();
 
-var keys = require("./keys");
-var spotifyAPI = require("node-spotify-api");
+var keys = require("./keys.js");
+var Spotify = require("node-spotify-api")
 
-var request = require("request");
-
-var fs = require("fs");
-
-var spotify = new Spotify(keys.spotify);
+var spotify = new Spotify({
+    id: '5e6ddc853509416da5938c66c724d60d',
+    secret: 'd3e402ad683341b1a553f85f0154479a'
+});
 
 var axios = require("axios");
 
@@ -63,11 +62,18 @@ if (commands === "concert-this") {
         console.log(error.config);
     })
 }
-
+debugger
 if (commands === "spotify-this-song") {
-    spotify.request('https://api.spotify.com/v1/tracks/' + searchVariable + "/")
+    console.log("Searching for " + searchVariable)
+    debugger
+    spotify
+        .search(({ type: 'track', query: searchVariable }))
         .then(function(response) {
         console.log(response); 
+        // console.log("Artist(s): " + artistsNames);
+	    console.log("Song Name: " + data.tracks.items[0].name);
+	    console.log("Preview Link: " + data.tracks.items[0].preview_url);
+	    console.log("Album: " + data.tracks.items[0].album.name);
     })
     .catch(function(err) {
         console.error('Error occurred: ' + err); 
