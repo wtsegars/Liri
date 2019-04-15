@@ -13,6 +13,8 @@ var axios = require("axios");
 var moment = require('moment');
 moment().format();
 
+const fs = require('fs');
+
 const commands = process.argv[2];
 const searchVariable = process.argv[3];
 
@@ -69,13 +71,57 @@ if (commands === "spotify-this-song") {
     spotify
         .search(({ type: 'track', query: searchVariable }))
         .then(function(response) {
-        console.log(response); 
-        // console.log("Artist(s): " + artistsNames);
-	    console.log("Song Name: " + data.tracks.items[0].name);
-	    console.log("Preview Link: " + data.tracks.items[0].preview_url);
-	    console.log("Album: " + data.tracks.items[0].album.name);
+        console.log("Artist(s): " + JSON.stringify(response.tracks.items[0].artists[0].name, null, 2));
+        console.log("Song Name: " + response.tracks.items[0].name);
+        console.log("Preview Link: " + response.tracks.items[0].preview_url);
+        console.log("Album: " + response.tracks.items[0].album.name);
     })
     .catch(function(err) {
         console.error('Error occurred: ' + err); 
+    })
+}
+if (commands === "do-what-it-says") {
+    fs.readFile("random.txt", "utf8", function(error, data) {
+        if (error) {
+            return console.log(error);
+        }
+        
+        var varArray = data.split(",");
+        
+        var replace = varArray[1].replace(/['"]+/g,'');
+        
+        if (varArray.includes("spotify-this-song")) {
+            console.log("Searching for " + replace)
+            debugger
+            spotify
+            .search(({ type: 'track', query: replace }))
+            .then(function(response) {
+            console.log("Artist(s): " + JSON.stringify(response.tracks.items[0].album.artists[0].name, null, 2));
+            console.log("Song Name: " + response.tracks.items[0].name);
+            console.log("Preview Link: " + response.tracks.items[0].preview_url);
+            console.log("Album: " + response.tracks.items[0].album.name);
+            })
+        }
+        if (varArray.includes("movie-this")) {
+            axios.get("http://www.omdbapi.com/?apikey=75323c5a&t=" + replace + "/")
+            .then(function (response) {
+            console.log(response.data.Title);
+            console.log(response.data.Year);
+            console.log(response.data.Ratings[0]);
+            console.log(response.data.Ratings[1]);
+            console.log(response.data.Country);
+            console.log(response.data.Language);
+            console.log(response.data.Plot);
+            console.log(response.data.Actors);
+            })
+        }
+        if (varArray.includes("concert-this")) {
+            axios.get("https://rest.bandsintown.com/artists/" + searchVariable + "/events?app_id=codingbootcamp")
+            .then(function (response) {
+            console.log(response.data[0].venue.name);
+            console.log(response.data[0].venue.city, response.data[0].venue.region, response.data[0].venue.country);
+            console.log(moment(response.data[0].datetime).format("MM/DD/YYYY"));
+            })
+        }
     })
 }
