@@ -9,4 +9,14 @@ The first command that can be taken in by Liri is called movie-this. What this c
 
 ![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
 
-2. Next you would 
+2. Next you would type the following into you terminal window: 
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+(note: Tropic Thunder is just an example, any movie could be put in here and it would work.)
+
+3. Lastly you would hit enter to run Liri and you output should look something like this:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+The second command that can be taken in by Liri is called concert-this. What this will do is that allows for a user to enter a band/artist into the terminal and Liri will give back
