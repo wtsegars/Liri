@@ -16,7 +16,7 @@ moment().format();
 const fs = require('fs');
 
 const commands = process.argv[2];
-const searchVariable = process.argv[3];
+const searchVariable = process.argv.slice(3).join(" ");
 
 if(commands === "movie-this") {
     axios.get("http://www.omdbapi.com/?apikey=75323c5a&t=" + searchVariable + "/")
