@@ -1,1 +1,2 @@
 # Liri
+This is a back-end web application that runs 100% on Node.js called Liri (which stands for Language Interpretation and Recognition Interface). This application is similar to the iPhone's Siri but uses the terminal/console to communicate with a user as opposed to being spoken to. The application runs a few different APIs that all have different functions depending on what the user inputs. Below are some detailed instructions on how to use Liri: 
