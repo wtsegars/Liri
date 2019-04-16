@@ -5,4 +5,8 @@ OMDB/movie-this:
 
 The first command that can be taken in by Liri is called movie-this. What this command does is that it allows a user to type in a specific movie and Liri will give back certian information on that movie such as the title, year it was released, ratings, etc. Here is how to do that:
 
-1. First navigate to the folder that contains the liri.js file along with everything else that is needed to power it. Your 
+1. First navigate to the folder that contains the liri.js file along with everything else that is needed to power it. Your termial should look like this:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+2. Next you would 
