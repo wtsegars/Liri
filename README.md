@@ -19,4 +19,32 @@ The first command that can be taken in by Liri is called movie-this. What this c
 
 ![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
 
-The second command that can be taken in by Liri is called concert-this. What this will do is that allows for a user to enter a band/artist into the terminal and Liri will give back
+The second command that can be taken in by Liri is called concert-this. What this will do is that allows for a user to enter a band/artist into the terminal and Liri will give back information on the next venue that the specific artist/band is playing. Here is how a user would do that:
+
+1. Like the previous command, navigate to the folder that contains liri.js using your terminal:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+2. Next you would type the following into you terminal:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+3. Lastly you would hit enter and the output should look something like this:
+
+![alt text](https://rae.githubusercontent.com/wtsegars/Liri/images)
+
+The third command that can be taken in by Liri is called spotify-this-song. What this command will do is that it allow for a user to type in the name of a specific song and it will allow Liri to pull up basic information on that song such as the artists who worked on it, the album it came from, a preview link, etc. Here is how a user would use this command:
+
+1. Like the previous commands, navigate to the folder that contains liri.js using your terminal:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+2. Next you would type this into you terminal: 
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+3. Lastly you would hit enter and the output should look something like this:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+(note: not all songs are going to have a preview_url.)
