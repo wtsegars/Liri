@@ -7,7 +7,7 @@ The first command that can be taken in by Liri is called movie-this. What this c
 
 1. First navigate to the folder that contains the liri.js file along with everything else that is needed to power it. Your termial should look like this:
 
-![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images/ScreenShot2019-04-15at9.38.02PM.png)
+![alt text](https://github.com/wtsegars/Liri/blob/master/images/ScreenShot2019-04-15at9.38.02PM.png)
 
 2. Next you would type the following into you terminal window: 
 
@@ -23,7 +23,7 @@ The second command that can be taken in by Liri is called concert-this. What thi
 
 1. Like the previous command, navigate to the folder that contains liri.js using your terminal:
 
-![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images/ScreenShot2019-04-15at9.38.02PM.png)
+![alt text](https://github.com/wtsegars/Liri/blob/master/images/ScreenShot2019-04-15at9.38.02PM.png)
 
 2. Next you would type the following into you terminal:
 
@@ -37,7 +37,7 @@ The third command that can be taken in by Liri is called spotify-this-song. What
 
 1. Like the previous commands, navigate to the folder that contains liri.js using your terminal:
 
-![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images/ScreenShot2019-04-15at9.38.02PM.png)
+![alt text](https://github.com/wtsegars/Liri/blob/master/images/ScreenShot2019-04-15at9.38.02PM.png)
 
 2. Next you would type this into you terminal: 
 
@@ -53,7 +53,7 @@ The fourth and final command that can be taken in by Liri is call do-what-it-say
 
 1. Like the previous commands, navigate to the folder that contains liri.js using your terminal:
 
-![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images/ScreenShot2019-04-15at9.38.02PM.png)
+![alt text](https://github.com/wtsegars/Liri/blob/master/images/ScreenShot2019-04-15at9.38.02PM.png)
 
 2. Next you would type this into your terminal:
 
