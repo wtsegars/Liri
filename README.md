@@ -48,3 +48,23 @@ The third command that can be taken in by Liri is called spotify-this-song. What
 ![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
 
 (note: not all songs are going to have a preview_url.)
+
+The fourth and final command that can be taken in by Liri is call do-what-it-says. This command is unique because not only does it rely on multiple APIs, it also relies on a txt file called "random.txt". What it does is that it takes in the text that is in random.txt and, depending on what is in the txt file, it will active one of the three previously mention commands. Here is how it works and how a user would use this command:
+
+1. Like the previous commands, navigate to the folder that contains liri.js using your terminal:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+2. Next you would type this into your terminal:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+Depending on what is inside of the random.txt file, it will run one of the previous commands. For instance in the example below, it will run spotify-this-song with the song I Want It That Way:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+3. Once the command is run, it will show the information for the song mentioned in the previous example just like it had been used with the spotify-this-song command:
+
+![alt text](https://raw.githubusercontent.com/wtsegars/Liri/images)
+
+If the text in random.txt is altered to contain movie-this or concert-this along with a search query, it will work just the same as the previous example.
